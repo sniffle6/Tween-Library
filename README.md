@@ -3,7 +3,7 @@ A simple library for tweening UI
 
 # How to use
 
-1) Create a c# script for the Ui object you want to effect
+1) Create a c# script for the Ui object you want to affect
 2) On that script add an new EffectBuilder
 3) Add effects to the effectBuilder with
 `effectBuilder.AddEffect(*effect type*);`
