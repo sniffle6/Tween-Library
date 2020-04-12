@@ -1,0 +1,23 @@
+{
+  "name": "com.codingwithunity.tweenlibrary",
+  "version": "1.0.0",
+  "displayName": "Tween Library",
+  "description": "A simple easy to extend Tween library",
+  "unity": "2019.3",
+  "dependencies": {
+    
+  },
+  "keywords": ["tools", "tween", "coding with unity"],
+  "author": {
+    "name": "Andy Weber",
+    "email": "sniffle6@gmail.com",
+    "url": "www.youtube.com/CodingWithUnity"
+  },
+  "samples": [
+    {
+      "displayName": "Healthbar Effects",
+      "description": "Simple effects applied when taking damage",
+      "path": "Samples~/Healthbar Effects"
+    }
+  ]
+}

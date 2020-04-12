@@ -900,7 +900,7 @@ MonoBehaviour:
   slider: {fileID: 1253341394}
   waitTime: 0.75
   maxScaleSize: {x: 1.25, y: 1.25, z: 1.25}
-  scaleSpeed: 10
+  scaleSpeed: 20
   maxShakeRotation: 3.5
   shakeSpeed: 20
   takeDamageColor: {r: 1, g: 0, b: 0, a: 1}

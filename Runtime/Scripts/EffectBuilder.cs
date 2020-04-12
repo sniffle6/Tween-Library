@@ -24,7 +24,7 @@ namespace Tween_Library.Scripts
             effect.OnComplete += OnEffectComplete;
             return this;
         }
-        
+
         public void ExecuteEffects()
         {
             Owner.StopAllCoroutines();

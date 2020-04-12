@@ -8,12 +8,12 @@ namespace Tween_Library.Scripts.Effects
     {
         public event Action<IUiEffect> OnComplete;
         private RectTransform RectTransform { get; }
-        private WaitForSeconds Wait { get; }
+        private YieldInstruction Wait { get; }
         private float ScaleSpeed { get; }
         private Vector3 MaxSize { get; }
         
         
-        public ScaleRectEffect(RectTransform rectTransform, Vector3 maxSize, float scaleSpeed, WaitForSeconds wait, Action<IUiEffect> onComplete = null)
+        public ScaleRectEffect(RectTransform rectTransform, Vector3 maxSize, float scaleSpeed, YieldInstruction wait, Action<IUiEffect> onComplete = null)
         {
             RectTransform = rectTransform;
             MaxSize = maxSize;

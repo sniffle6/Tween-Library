@@ -8,13 +8,13 @@ namespace Tween_Library.Scripts.Effects
     public class FlashColorEffect : IUiEffect
     {
         public event Action<IUiEffect> OnComplete;
-        private WaitForSeconds Wait { get;  }
+        private YieldInstruction Wait { get;  }
         private Color DefaultColor { get; }
         private Color TakeDamageColor { get;  }
         private Image SliderFill { get; }
 
         
-        public FlashColorEffect(Color defaultColor, Color takeDamageColor, Image sliderFill, WaitForSeconds wait, Action<IUiEffect> onComplete = null)
+        public FlashColorEffect(Color defaultColor, Color takeDamageColor, Image sliderFill, YieldInstruction wait, Action<IUiEffect> onComplete = null)
         {
             DefaultColor = defaultColor;
             TakeDamageColor = takeDamageColor;
