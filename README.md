@@ -7,7 +7,7 @@ A simple library for tweening UI
 2) On that script add a new EffectBuilder
 3) Add effects to the effectBuilder with
 `effectBuilder.AddEffect(*effect type*);`
-4) Effects can be chained.
+4) Effects can be chain built, but all fire at once.
 ```
 effectBuilder.AddEffect(*firstEffect*).AddEffect(*second effect*).OnAllEffectsComplete += AllEffectsComplete;
 ```
