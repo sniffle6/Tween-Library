@@ -9,7 +9,7 @@ A simple library for tweening UI
 `effectBuilder.AddEffect(*effect type*);`
 4) Effects can be chained.
 ```
-effectBuilder.AddEffect(*firstEffect*).AddEffect(*second effect*).OnComplete += AllEffectsComplete;
+effectBuilder.AddEffect(*firstEffect*).AddEffect(*second effect*).OnAllEffectsComplete += AllEffectsComplete;
 ```
 
 # Example
