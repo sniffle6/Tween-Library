@@ -3,13 +3,13 @@ A simple library for tweening UI
 
 # How to use
 
-1) Create a c# script for the Ui object you want to effect
-2) On that script add an new EffectBuilder
+1) Create a c# script for the Ui object you want to affect
+2) On that script add a new EffectBuilder
 3) Add effects to the effectBuilder with
 `effectBuilder.AddEffect(*effect type*);`
-4) Effects can be chained.
+4) Effects can be chain built, but all fire at once.
 ```
-effectBuilder.AddEffect(*firstEffect*).AddEffect(*second effect*).OnComplete += AllEffectsComplete;
+effectBuilder.AddEffect(*firstEffect*).AddEffect(*second effect*).OnAllEffectsComplete += AllEffectsComplete;
 ```
 
 # Example
