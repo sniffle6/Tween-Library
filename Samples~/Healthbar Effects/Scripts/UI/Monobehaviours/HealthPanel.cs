@@ -30,9 +30,7 @@ namespace Example.Scripts.UI.Monobehaviours
         private void Awake()
         {
             _wait = new WaitForSeconds(waitTime);
-            
             _takeDamageEffect = new EffectBuilder(this);
-            
             _takeDamageEffect
                 .AddEffect(new ShakeRectEffect(slider.GetComponent<RectTransform>(), maxShakeRotation, shakeSpeed, OnEffectComplete))
                 .AddEffect(new FlashColorEffect(sliderFill.color, takeDamageColor, sliderFill, _wait))
@@ -43,19 +41,25 @@ namespace Example.Scripts.UI.Monobehaviours
         private void OnEnable()
         {
             PlayerHealth.OnHealthChanged += HandleHealthChanged;
+            PlayerHealth.OnMaxHealthChanged += HandleMaxHealthChanged;
         }
 
         private void OnDestroy()
         {
             PlayerHealth.OnHealthChanged -= HandleHealthChanged;
+            PlayerHealth.OnMaxHealthChanged -= HandleMaxHealthChanged;
         }
 
 
         private void HandleHealthChanged(float currentHealth)
         {
             slider.value = currentHealth;
-
             _takeDamageEffect.ExecuteEffects();
+        }
+        
+        private void HandleMaxHealthChanged(float maxHealth)
+        {
+            slider.maxValue = maxHealth;
         }
 
         private void OnEffectComplete(IUiEffect effect)
