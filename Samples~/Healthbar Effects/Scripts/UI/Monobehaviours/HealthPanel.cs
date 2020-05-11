@@ -25,7 +25,7 @@ namespace Example.Scripts.UI.Monobehaviours
         [SerializeField] private Image sliderFill;
 
         private EffectBuilder _takeDamageEffect;
-        private  WaitForSeconds _wait;
+        private  WaitForSeconds _wait; 
         
         private void Awake()
         {
