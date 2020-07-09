@@ -17,7 +17,11 @@
     {
       "displayName": "Healthbar Effects",
       "description": "Simple effects applied when taking damage",
-      "path": "Samples~/Healthbar Effects",
+      "path": "Samples~/Healthbar Effects"
+    },
+    {
+      "displayName": "Snap To Effect",
+      "description": "Simple effects example for snapping a rect Transform to a certain size",
       "path": "Samples~/Snap To Effect"
     }
   ]
